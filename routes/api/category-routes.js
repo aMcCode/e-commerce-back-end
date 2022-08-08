@@ -3,7 +3,7 @@ const { Category, Product } = require('../../models');
 
 router.get('/', (req, res) => {
   Category.findAll({
-    attributes: [ 'id', category_name ],
+    attributes: [ 'id', 'category_name' ],
     include: [ Product ]
   })
   .then(dbCatData => res.json(dbCatData))
@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
   Category.findAll({
-    attributes: [ 'id', category_name ],
+    attributes: [ 'id', 'category_name' ],
     where: { id: req.params.id },
     include: [ Product ]
   })
@@ -66,12 +66,12 @@ router.delete('/:id', (req, res) => {
       res.status(404).json({message: 'No category found with this id'});
       return;
     };
-  })
-  res.json(dbCatData);
+    res.json(dbCatData)
   })
   .catch((err) => {
     console.log(err);
     res.status(500).json(err);
+  });
 });
 
 module.exports = router;

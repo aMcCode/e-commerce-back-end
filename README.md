@@ -14,7 +14,9 @@
 ***
 
 ## Description
-This app represents the back-end implementation of an e-commerce app. The app uses Express.js and Sequelize. Please see the walk-through videos at https://drive.google.com/file/d/1cpXc_A36XG7tt-GzaKSl8Qjiz9FpDyrO/view for demstrations of how to create and seed the database, start the app server and initiate CRUD API routes using Insomnia.
+This app represents the back-end implementation of an e-commerce app. The app uses Express.js and Sequelize. Please see the following walk-through videos:
+* Create and seed the database, start the server: https://drive.google.com/file/d/1Q9-Ro4JQMCIgE5dnrCLzHM_9QOoSggdS/view
+* Access API CRUD routes: 
 
 ![Alt text](./images/Screenshot.gif?raw=true "Application Screenshot")
 ***
